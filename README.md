@@ -58,7 +58,7 @@ para inicializar o projeto, e por último acesse o link [http://localhost:3000](
 ### `Erros para serem corrigidos.`
 
 * 1 - Erro
-    * No momento de fazer a persistência de um novo carro as chaves estrageiras(foreign keys) estavam sendo salvas como null, causando uma desordem no banco de dados, e assim causando erro no frontend. Correção temporaria eu retirei os campos do frontend que contém na tabela carro, os únicos dados que serão salvos na hora de cadastrar um novo carro são os da tabela marca e tabela modelo, e ao salvar não aparecerão no frontend apenas no backend.
+    * No momento de fazer a persistência de um novo carro as chaves estrangeiras(foreign keys) estavam sendo salvas como null, causando uma desordem no banco de dados, e assim causando erro no frontend. Correção temporaria eu retirei os campos do frontend que contém na tabela carro, os únicos dados que serão salvos na hora de cadastrar um novo carro são os da tabela marca e tabela modelo, e ao salvar não aparecerão no frontend apenas no backend.
 <p>
 
 * 2 - Adicionar funcionalidade.
