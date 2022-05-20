@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&display=swap');
+
+.section-tabela-novos-carros{
+
+    section{
+        margin-top: 15px;
+
+        h1{
+            margin-top: 50px;
+            text-align: center;
+            font-family: Lato;
+            font-style: italic;
+        }
+    
+        th{
+            text-align: center;
+            font-family: Lato;
+            font-weight: 700;
+            font-size: 18px;
+            background: #FFA500;
+        }
+        td{
+            text-align: center;
+            font-family: Lato;
+            font-weight: 400;
+        }
+    }
+
+}

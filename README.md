@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+<h1 align="center">Teste Ws Work </h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h2 align="center"><a href="https://petshop-online.netlify.app/"> 🚀 Clique Aqui Para Acessar o site 🚀</a></h2>
 
-## Available Scripts
+<h2 align="center">👁‍🗨👁‍🗨</h2>
+<h3 align="center">📸Screenshot</h3>
+<p>
+<h1 align="center"><img src="src/img/img-1.png"></h1>
+<h1 align="center"><img src="src/img/img-2.png"></h1>
+<h1 align="center"><img src="src/img/img-3.png"></h1>
 
-In the project directory, you can run:
 
-### `npm start`
+## **Sobre**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Nesse projeto eu desenvolvi uma página frontend de um pet shop online.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* Tecnologias Utilizadas
+    * [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+    * [ReactJs](https://pt-br.reactjs.org/)
+    * [Sass](https://sass-lang.com/)
+    * [BootStrap]()
 
-### `npm test`
+* Principais bibliotecas que foi Utilizadas 
+    * [Axios](https://www.npmjs.com/package/axios)
+    * [react-modal](https://www.npmjs.com/package/react-modal)
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<h2 align="center"> Testando o Projeto </h2>
 
-### `npm run build`
+## 1 - Primeiro Passo
+Para testar o projeto primeiro faça o clone do repositório utilizando a linha de comando abaixo:
+```
+git clone https://github.com/AAndersonSantos/Frontend-Teste.git
+```
+ou faça o download do projeto em download zip.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 2 - Segundo Passo
+Entre na pasta Frontend-Teste e utilize a linha de comando abaixo para fazer o download de todas as dependências necessarias para que o projeto funcione corretamente
+``` 
+npm install
+``` 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 3 - Terceiro Passo
+Utilize a linha de comando
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+``` 
+npm start 
+``` 
+ou
 
-### `npm run eject`
+``` 
+yarn start 
+``` 
+para inicializar o projeto, e por último acesse o link [http://localhost:3000](http://localhost:3000) 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### `Melhorias para fazer neste projeto.`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* Responsividade
+* Header, Swiper carousel
+* OWL Carousel
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+O deploy desse projeto foi realizado no [Netlify](https://www.netlify.com/)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<h2 align="center"><a href="https://petshop-online.netlify.app/"> 🚀 Clique Aqui Para Acessar o site 🚀</a></h2>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<h3 align="center">Criado por🤖Anderson Santos</h3>
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
