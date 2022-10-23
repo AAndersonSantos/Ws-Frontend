@@ -9,7 +9,7 @@ function VeiculosLista(){
     const [posts, setPosts] = useState([]);
 
     useEffect(() => {  
-        axios.get("https://wswork-cars.herokuapp.com/api/carro").then((res) => {
+        axios.get("http://localhost:8080/api/carro").then((res) => {
             setPosts(res.data)
             console.log(res);       
         }).catch((err) => {
@@ -23,8 +23,8 @@ function VeiculosLista(){
             <Table striped bordered hover size="sm" className="table-veiculos-titluos">
             <thead>
                 <tr>
-                    <th>Modelo</th>
-                    <th>Marca</th>
+                    <th>ID / Marca</th>
+                    <th>ID / Modelo</th>
                     <th>Ano</th>
                     <th>Combustível</th>
                     <th>Número de portas</th>
@@ -44,13 +44,13 @@ function VeiculosLista(){
         return posts.map((post, key) => {
             return (
                 <tr className="table-veiculos-linhas" key={key}>
-                    <td>{post.modelo.marca.nome_marca}</td>
-                    <td>{post.modelo.nome}</td>
+                    <td>{post.marcaId} / {post.nome_marca}</td>
+                    <td>{post.modeloId} / {post.nome}</td>
                     <td>{post.ano}</td>
                     <td>{post.combustivel}</td>
                     <td>{post.num_portas}</td>
                     <td>{post.cor}</td>
-                    <td>{new Intl.NumberFormat("pt-BR", { style: 'currency', currency: 'BRL' }).format(post.modelo.valor_fipe / 100)}</td>
+                    <td>{new Intl.NumberFormat("pt-BR", { style: 'currency', currency: 'BRL' }).format(post.valor_fipe / 100)}</td>
                     <td>{post.timestampCadastro}</td>
                 </tr>
             )

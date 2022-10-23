@@ -7,7 +7,7 @@ function TabelaNovosCarros() {
     const [posts, setPosts] = useState([]);
 
     useEffect(() => {
-        axios.get("https://wswork-cars.herokuapp.com/api/carro").then((res) => {
+        axios.get("http://localhost:8080/api/carro").then((res) => {
             setPosts(res.data)
             console.log(res);
         }).catch((err) => {
@@ -20,9 +20,9 @@ function TabelaNovosCarros() {
         return (
             <table className="table table-hover">
                 <thead>
-                    <tr class="table-active">
-                        <th>Modelo</th>
-                        <th>Marca</th>
+                    <tr className="table-active">
+                        <th>ID / Modelo</th>
+                        <th>ID / Marca</th>
                         <th>Ano</th>
                         <th>Combustível</th>
                         <th>Número de portas</th>
@@ -43,13 +43,13 @@ function TabelaNovosCarros() {
             return (
                 //moment('01/01/2022 12:00:19').isBefore(post.timestampCadastro) === true ?
                 <tr key={key}>
-                    <td>{post.modelo.nome}</td>
-                    <td>{post.modelo.marca.nome_marca}</td>
+                    <td>{post.modeloId} / {post.nome}</td>
+                    <td>{post.marcaId} / {post.nome_marca}</td>
                     <td>{post.ano}</td>
                     <td>{post.combustivel}</td>
                     <td>{post.num_portas}</td>
                     <td>{post.cor}</td>
-                    <td>{new Intl.NumberFormat("pt-BR", { style: 'currency', currency: 'BRL' }).format(post.modelo.valor_fipe / 100)}</td>
+                    <td>{new Intl.NumberFormat("pt-BR", { style: 'currency', currency: 'BRL' }).format(post.valor_fipe / 100)}</td>
                     <td>{post.timestampCadastro}</td>
                 </tr>
                 //: null

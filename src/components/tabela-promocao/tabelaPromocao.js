@@ -7,7 +7,7 @@ function TabelaPromocao(){
     const [posts, setPosts] = useState([]);
 
     useEffect(() => {
-        axios.get("https://wswork-cars.herokuapp.com/api/carro").then((res) => {
+        axios.get("http://localhost:8080/api/carro").then((res) => {
             setPosts(res.data)
             console.log(res);
         }).catch((err) => {
@@ -39,16 +39,16 @@ function TabelaPromocao(){
     }
     
     function renderRows() {
-        return posts.sort((a, b) => a.modelo.valor_fipe > b.modelo.valor_fipe ? 1 : -1).map((post, key) => {
+        return posts.sort((a, b) => a.valor_fipe > b.valor_fipe ? 1 : -1).map((post, key) => {
             return (
                 <tr key={key}>
-                    <td>{post.modelo.nome}</td>
-                    <td>{post.modelo.marca.nome_marca}</td>
+                    <td>{post.modeloId} / {post.nome}</td>
+                    <td>{post.marcaId} / {post.nome_marca}</td>
                     <td>{post.ano}</td>
                     <td>{post.combustivel}</td>
                     <td>{post.num_portas}</td>
                     <td>{post.cor}</td>
-                    <td>{new Intl.NumberFormat("pt-BR", { style: 'currency', currency: 'BRL' }).format(post.modelo.valor_fipe / 100)}</td>
+                    <td>{new Intl.NumberFormat("pt-BR", { style: 'currency', currency: 'BRL' }).format(post.valor_fipe / 100)}</td>
                     <td>{post.timestampCadastro}</td>
                 </tr>
             )

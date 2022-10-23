@@ -1,7 +1,10 @@
 import React from "react";
 import { Navbar, Nav, Container, Button} from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
-import Modal from "../modal/modal"
+import ModalCadastrarVeiculo from "../modal/modalCadastrarVeiculo"
+import ModalCadastrarModelo from "../modal/modalCadastrarModelo"
+import ModalCadastrarMarca from "../modal/modalCadastrarMarca"
+
 import "./styles/styleNavBar.scss"
 
 function NavbarComponent(){
@@ -24,7 +27,9 @@ function NavbarComponent(){
                 <Nav className="me-auto">
                     <Button variant="outline-primary" onClick={home}><span>Home</span></Button>
                     <Button variant="outline-primary" onClick={tabelaVeiculos}><span>Tabela De Veículos</span></Button>
-                    <Modal/>
+                    <ModalCadastrarVeiculo/>
+                    <ModalCadastrarModelo/>
+                    <ModalCadastrarMarca/>
                 </Nav>
             </Container>
       </Navbar>
